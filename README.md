@@ -1,6 +1,6 @@
 Install this cert as a trusted cert:
 
-<a href='https://raw.githubusercontent.com/dloftus98/novnc-wss/master/self.cer'>cert</a>
+<a href='https://raw.githubusercontent.com/dloftus98/novnc-wss/master/self.cer' download>cert</a>
 
 
 Login to your desktop and run the command below:
