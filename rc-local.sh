@@ -12,7 +12,7 @@ sleep 5
 #$TARGET_DIR/noVNC/utils/launch.sh --listen 80 --vnc localhost:5901 &
 #/usr/bin/python $TARGET_DIR/noVNC/utils/websockify/run -v --daemon --record=/root/websockify-record --web $TARGET_DIR/noVNC/ 80 localhost:5901 > /var/log/websockify.log 2>&1 &
 #$TARGET_DIR/noVNC/utils/websockify/run -v  --record=/root/websockify-record --web $TARGET_DIR/noVNC/ 80 localhost:5901  &>  /var/log/websockify.log &
-$TARGET_DIR/noVNC/utils/websockify/run -v --web $TARGET_DIR/noVNC/ 443 localhost:5901  &>  /var/log/websockify.log &
+$TARGET_DIR/noVNC/utils/websockify/run -v --cert=$TARGET_DIR/self.pem --web $TARGET_DIR/noVNC/ 443 localhost:5901  &>  /var/log/websockify.log &
 
 # set up vnc password from instance id on first time bootup
 if [ -f $TARGET_DIR/passwd ]; then
