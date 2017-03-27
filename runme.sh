@@ -1,6 +1,6 @@
 cd /opt/netspectrum/aws/ubuntu-desktop
 
-sudo curl -Ls https://github.com/dloftus98/novnc-wss/raw/master/self.pem >self.pem
+sudo sh -c 'curl -Ls https://github.com/dloftus98/novnc-wss/raw/master/self.pem >self.pem'
 sudo chown ubuntu:ubuntu self.pem
 
 cd bin
